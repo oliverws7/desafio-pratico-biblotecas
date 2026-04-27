@@ -1,0 +1,65 @@
+
+-----
+
+# Desafio Prático - Algoritmos e Programação
+
+Este repositório contém as soluções para o Desafio Prático 4 da disciplina de **Algoritmos e Programação**, ministrada pela Profa. Evelyn Karinne Silva no 1º Período do curso de Bacharelado em Inteligência Artificial.
+
+## 📋 Descrição do Projeto
+
+O objetivo deste desafio é aplicar conceitos de programação em Python, focando no uso de funções, bibliotecas padrão (`random`, `math`, `re`) e a criação de módulos personalizados.
+
+## 🚀 Funcionalidades
+
+O projeto é composto por cinco questões principais:
+
+1.  **Jogo de Adivinhação**:
+    
+      * Gera um número aleatório entre 1 e 100 usando a biblioteca `random`.
+      * Armazena todos os palpites do usuário.
+      * Fornece dicas se o número secreto é maior ou menor que o palpite atual.
+      * Ao acertar, exibe a quantidade total de tentativas e todos os números digitados.
+
+2.  **Cálculo de Áreas de Figuras Planas**:
+    
+      * Sistema para calcular a área de: Triângulo, Quadrado, Retângulo, Trapézio, Losango e Círculo.
+      * Cada figura possui sua própria função específica de cálculo.
+
+3.  **Equação do 2º Grau**:
+    
+      * Utiliza o módulo `math` para calcular as raízes de uma equação $ax^2 + bx + c = 0$.
+      * Determina o número de raízes reais com base no discriminante ($\\Delta$).
+
+4.  **Extrator de Telefones (RegEx)**:
+    
+      * Utiliza expressões regulares (`re`) para encontrar números de telefone no formato `(XX) XXXXX-XXXX` em um texto.
+      * Retorna uma lista com todos os números encontrados ou informa caso não haja correspondências.
+
+5.  **Verificador de Segurança de Senhas**:
+    
+      * Desenvolvido com uma estrutura de dois arquivos (módulo e código principal).
+      * Verifica se a senha possui pelo menos 8 caracteres, uma letra maiúscula e um número.
+
+## 🛠️ Tecnologias Utilizadas
+
+  * **Python 3.x**
+  * **Bibliotecas nativas**:
+      * `random`: Para geração de números aleatórios.
+      * `math`: Para operações matemáticas avançadas e raízes.
+      * `re`: Para manipulação de expressões regulares e validações.
+
+## 📂 Estrutura de Arquivos
+
+  * `main.py`: Código principal que executa as questões de 1 a 4 e a implementação da questão 5.
+  * `verificador_senha.py`: Módulo contendo a função de validação de segurança solicitada na questão 5.
+
+## 🎓 Identificação
+
+  * **Instituição**: Instituto de Tecnologia - PIT.
+  * **Curso**: Bacharelado em Inteligência Artificial.
+  * **Disciplina**: Algoritmos e Programação.
+  * **Professora**: Evelyn Karinne Silva.
+
+-----
+
+*Este projeto foi desenvolvido como parte das atividades avaliativas individuais do curso.*
