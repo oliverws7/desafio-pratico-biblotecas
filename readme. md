@@ -1,65 +1,58 @@
 
------
 
-# Desafio Prático - Algoritmos e Programação
+``` markdown
+# Algoritmos e Programação: Implementação de Estruturas de Controle e Bibliotecas Padrão
 
-Este repositório contém as soluções para o Desafio Prático 4 da disciplina de **Algoritmos e Programação**, ministrada pela Profa. Evelyn Karinne Silva no 1º Período do curso de Bacharelado em Inteligência Artificial.
+Este repositório contém as resoluções do **Desafio Prático 4** da disciplina de Algoritmos e Programação, componente curricular do curso de Bacharelado em Inteligência Artificial. O projeto foca na modularização de código, tratamento de expressões regulares e aplicação de bibliotecas matemáticas e estatísticas.
 
-## 📋 Descrição do Projeto
+## 🏛️ Identificação Institucional
+*   **Instituição:** Instituto de Tecnologia - PIT / Faculdade Estadual Piauí
+*   **Curso:** Bacharelado em Inteligência Artificial – 1º Período
+*   **Discente:** Mateus Oliveira Nunes
+*   **Docente:** Profa. Evelyn Karinne Silva
+*   **Data de Entrega:** 27 de abril de 2026
 
-O objetivo deste desafio é aplicar conceitos de programação em Python, focando no uso de funções, bibliotecas padrão (`random`, `math`, `re`) e a criação de módulos personalizados.
+## 🎯 Objetivos
+Desenvolver soluções computacionais que demonstrem proficiência em:
+1.  Manipulação de fluxos de controle e estruturas de repetição.
+2.  Implementação de sub-rotinas (funções) para resolução de problemas específicos.
+3.  Integração de módulos nativos do ecossistema Python (`random`, `math`, `re`).
+4.  Criação e importação de módulos personalizados para fomento da reusabilidade de código.
 
-## 🚀 Funcionalidades
+## 🛠️ Descrição Técnica das Atividades
 
-O projeto é composto por cinco questões principais:
+### I. Simulação Estocástica: Jogo de Adivinhação
+Implementação de um sistema de adivinhação baseado na geração de números pseudoaleatórios no intervalo $[1, 100]$ utilizando a biblioteca `random`.
+*   **Persistência de Dados:** Todos os inputs do usuário são armazenados em uma estrutura de lista.
+*   **Lógica Condicional:** Fornece feedback iterativo (dicas de magnitude) até que a condição de parada (acerto) seja atingida.
+*   **Relatório de Saída:** Ao finalizar, o sistema realiza o log de todas as tentativas e a contagem total de iterações.
 
-1.  **Jogo de Adivinhação**:
-    
-      * Gera um número aleatório entre 1 e 100 usando a biblioteca `random`.
-      * Armazena todos os palpites do usuário.
-      * Fornece dicas se o número secreto é maior ou menor que o palpite atual.
-      * Ao acertar, exibe a quantidade total de tentativas e todos os números digitados.
+### II. Geometria Computacional: Sistema Alan Turing
+Desenvolvimento de um motor de cálculo para áreas de polígonos e círculos.
+*   **Modularidade:** Funções específicas para Triângulos, Quadrados, Retângulos, Trapézios, Losangos e Círculos.
+*   **Apoio Matemático:** Aplicação de fórmulas clássicas como $A = \frac{(B+b) \cdot h}{2}$ para trapézios e $A = \pi \cdot r^2$ para círculos.
 
-2.  **Cálculo de Áreas de Figuras Planas**:
-    
-      * Sistema para calcular a área de: Triângulo, Quadrado, Retângulo, Trapézio, Losango e Círculo.
-      * Cada figura possui sua própria função específica de cálculo.
+### III. Análise de Equações de Segundo Grau
+Algoritmo para determinar as raízes reais de uma equação quadrática ($ax^2 + bx + c = 0$) utilizando o módulo `math`.
+*   **Tratamento do Discriminante:** O programa avalia o valor de $\Delta$ para definir a natureza das raízes (reais distintas, raiz única ou raízes complexas).
 
-3.  **Equação do 2º Grau**:
-    
-      * Utiliza o módulo `math` para calcular as raízes de uma equação $ax^2 + bx + c = 0$.
-      * Determina o número de raízes reais com base no discriminante ($\\Delta$).
+### IV. Processamento de Linguagem Natural e RegEx
+Extração de padrões de comunicação telefônica em grandes blocos de texto.
+*   **Expressões Regulares:** Utilização da função `re.findall()` para identificar o padrão estrito `(XX) XXXXX-XXXX`.
+*   **Tratamento de Exceções:** Implementação de retorno informativo para buscas sem correspondência.
 
-4.  **Extrator de Telefones (RegEx)**:
-    
-      * Utiliza expressões regulares (`re`) para encontrar números de telefone no formato `(XX) XXXXX-XXXX` em um texto.
-      * Retorna uma lista com todos os números encontrados ou informa caso não haja correspondências.
+### V. Módulo de Cibersegurança: Validação de Credenciais
+Desenvolvimento de um sistema de validação de força de senhas dividido em dois arquivos (módulo e código principal).
+*   **Critérios de Segurança:** Verificação de comprimento mínimo (8 caracteres), presença de caracteres alfanuméricos e alternância de caixa (letras maiúsculas).
+*   **Integração:** O código principal consome a lógica exportada pelo módulo de segurança para validar a entrada do usuário.
 
-5.  **Verificador de Segurança de Senhas**:
-    
-      * Desenvolvido com uma estrutura de dois arquivos (módulo e código principal).
-      * Verifica se a senha possui pelo menos 8 caracteres, uma letra maiúscula e um número.
+## 💻 Requisitos de Execução
+*   Interpretador Python 3.8 ou superior.
+*   Estrutura de arquivos:
+    *   `main.py`: Ponto de entrada do sistema.
+    *   `verificador_senha.py`: Módulo de suporte para a questão 5.
 
-## 🛠️ Tecnologias Utilizadas
+---
+*Este projeto acadêmico reflete a aplicação de boas práticas de programação e organização de código sugeridas pela ementa da disciplina.*
 
-  * **Python 3.x**
-  * **Bibliotecas nativas**:
-      * `random`: Para geração de números aleatórios.
-      * `math`: Para operações matemáticas avançadas e raízes.
-      * `re`: Para manipulação de expressões regulares e validações.
-
-## 📂 Estrutura de Arquivos
-
-  * `main.py`: Código principal que executa as questões de 1 a 4 e a implementação da questão 5.
-  * `verificador_senha.py`: Módulo contendo a função de validação de segurança solicitada na questão 5.
-
-## 🎓 Identificação
-
-  * **Instituição**: Instituto de Tecnologia - PIT.
-  * **Curso**: Bacharelado em Inteligência Artificial.
-  * **Disciplina**: Algoritmos e Programação.
-  * **Professora**: Evelyn Karinne Silva.
-
------
-
-*Este projeto foi desenvolvido como parte das atividades avaliativas individuais do curso.*
+```
